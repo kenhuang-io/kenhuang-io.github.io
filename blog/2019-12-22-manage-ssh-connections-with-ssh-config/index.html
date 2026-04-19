@@ -91,7 +91,7 @@
   "wordCount":  528 ,
   "dateCreated": "2019-12-22T18:52:00+08:00",
   "datePublished": "2019-12-22T18:52:00+08:00",
-  "dateModified": "2019-12-22T18:52:00+08:00",
+  "dateModified": "2026-04-19T12:42:48+08:00",
   "image": "https://blog.kenhuang.io/img/2021-12-10-motor-helmet-400.jpg",
   "keywords": [ "Tools, tiling-wm" ],
   "mainEntityOfPage": {
@@ -316,7 +316,7 @@
           
           <p class="page-meta">
             
-            Published: 2019-12-22
+            Published: 2019-12-22, Last Updated: 2026-04-19
             
           </p>
         
@@ -334,14 +334,14 @@ How To Configure Connections
 </h2>
 <div id="outline-text-headline-1" class="outline-text-2">
 <p>
-For every SSH connection, there are some specific arguments like IP, port, user name, etc. Let&#39;s assume there is a host with IP <code class="verbatim">10.1.2.3</code>, and I can ssh into it with <code class="verbatim">whatacold</code> as name and <code class="verbatim">foo123</code> as the password at port 2234. I had to type <code class="verbatim">ssh -p 2234 whatacold@10.1.2.3</code> literally, which is too many keys to type.</p>
+For every SSH connection, there are some specific arguments like IP, port, user name, etc. Let&#39;s assume there is a host with IP <code class="verbatim">10.1.2.3</code>, and I can ssh into it with <code class="verbatim">ken</code> as name and <code class="verbatim">foo123</code> as the password at port 2234. I had to type <code class="verbatim">ssh -p 2234 ken@10.1.2.3</code> literally, which is too many keys to type.</p>
 <p>
 Actually, all these connection details can be put in <code class="verbatim">~/.ssh/config</code> like below, it&#39;s organized in sections per hosts:</p>
 <div class="src src-conf">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Host new-test
 </span></span><span class="line"><span class="cl">     Hostname 10.1.2.3
 </span></span><span class="line"><span class="cl">     Port 2234
-</span></span><span class="line"><span class="cl">     User whatacold
+</span></span><span class="line"><span class="cl">     User ken
 </span></span><span class="line"><span class="cl">     IdentityFile ~/.ssh/id_dev</span></span></code></pre></div>
 </div>
 <p>
@@ -530,7 +530,7 @@ Note that this default setting should be put at the end of the file, as it seems
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "whatacold" + '.disqus.com/embed.js';
+        s.src = '//' + "kenhuang_io" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -560,7 +560,7 @@ Note that this default setting should be put at the end of the file, as it seems
           
               <li>
 		
-		  <a href="mailto:whatacold@gmail.com" title="Email me">
+		  <a href="mailto:kenhuang512@gmail.com" title="Email me">
 		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>

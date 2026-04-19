@@ -327,7 +327,7 @@ Last week I came into a problem with Git, that I can&#39;t fetch the remote bran
 After searching, it seemed that the configuration of <code class="verbatim">fetch</code> of that repo was different(this <a href="https://stackoverflow.com/questions/11623862/fetch-in-git-doesnt-get-all-branches">Stack Overflow</a> thread for example) than before, it was specified that only <code class="verbatim">master</code> can be fetched. It worked after I changed it to <code class="verbatim">+refs/heads/*:refs/remotes/origin/*</code>.</p>
 <p>
 <em>BTW, I&#39;m improving my English by watching YouTube videos every single day; If you&#39;re also learning English, or any languages, LanguagePuppy can definitely help you. It&#39;s a Chrome extension I developed using Clojure. Check it out:</em></p>
-<a href="https://chromewebstore.google.com/detail/cmbdcklgjemppkcmnoiaehnefhobgiin?utm_medium=web&utm_source=whatacold.io&utm_campaign=git.fetch" target="_blank" class="button-link">Install LanguagePuppy</a>
+<a href="https://chromewebstore.google.com/detail/cmbdcklgjemppkcmnoiaehnefhobgiin?utm_medium=web&utm_source=blog&utm_campaign=git.fetch" target="_blank" class="button-link">Install LanguagePuppy</a>
 <p>
 I reflected why it happened after work, the only difference I can remember was that I clone that repo with the option <code class="verbatim">--depth &lt;N&gt;</code>, that is, it was a shallow clone to save some disk space.</p>
 <p>
@@ -341,23 +341,23 @@ Today I had some time at hand, and I confirmed that the option is the cause by r
 Let&#39;s demonstrate it by cloning my dotfiles repo with different options, and it shows clearly that Git will only fetch <code class="verbatim">master</code> of the remote repo if only specifying <code class="verbatim">--depth</code>:</p>
 <div class="src src-shell">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">$ <span class="nb">cd</span> /tmp/
-</span></span><span class="line"><span class="cl">$ git clone --depth <span class="m">1</span> https://github.com/whatacold/extensible-dotfiles.git dotfiles-depth1
-</span></span><span class="line"><span class="cl">$ git clone --no-single-branch --depth <span class="m">1</span> https://github.com/whatacold/extensible-dotfiles.git dotfiles-no-single-branch
-</span></span><span class="line"><span class="cl">$ git clone https://github.com/whatacold/extensible-dotfiles.git dotfiles-full
+</span></span><span class="line"><span class="cl">$ git clone --depth <span class="m">1</span> https://github.com/kenhuang-io/extensible-dotfiles.git dotfiles-depth1
+</span></span><span class="line"><span class="cl">$ git clone --no-single-branch --depth <span class="m">1</span> https://github.com/kenhuang-io/extensible-dotfiles.git dotfiles-no-single-branch
+</span></span><span class="line"><span class="cl">$ git clone https://github.com/kenhuang-io/extensible-dotfiles.git dotfiles-full
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ grep <span class="s1">&#39;remote &#34;origin&#34;&#39;</span> -A <span class="m">2</span> dotfiles-depth1/.git/config 
 </span></span><span class="line"><span class="cl"><span class="o">[</span>remote <span class="s2">&#34;origin&#34;</span><span class="o">]</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">url</span> <span class="o">=</span> https://github.com/whatacold/extensible-dotfiles.git
+</span></span><span class="line"><span class="cl">	<span class="nv">url</span> <span class="o">=</span> https://github.com/kenhuang-io/extensible-dotfiles.git
 </span></span><span class="line"><span class="cl">	<span class="nv">fetch</span> <span class="o">=</span> +refs/heads/master:refs/remotes/origin/master
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ grep <span class="s1">&#39;remote &#34;origin&#34;&#39;</span> -A <span class="m">2</span> dotfiles-no-single-branch/.git/config 
 </span></span><span class="line"><span class="cl"><span class="o">[</span>remote <span class="s2">&#34;origin&#34;</span><span class="o">]</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">url</span> <span class="o">=</span> https://github.com/whatacold/extensible-dotfiles.git
+</span></span><span class="line"><span class="cl">	<span class="nv">url</span> <span class="o">=</span> https://github.com/kenhuang-io/extensible-dotfiles.git
 </span></span><span class="line"><span class="cl">	<span class="nv">fetch</span> <span class="o">=</span> +refs/heads/*:refs/remotes/origin/*
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">$ grep <span class="s1">&#39;remote &#34;origin&#34;&#39;</span> -A <span class="m">2</span> dotfiles-full/.git/config
 </span></span><span class="line"><span class="cl"><span class="o">[</span>remote <span class="s2">&#34;origin&#34;</span><span class="o">]</span>
-</span></span><span class="line"><span class="cl">	<span class="nv">url</span> <span class="o">=</span> https://github.com/whatacold/extensible-dotfiles.git
+</span></span><span class="line"><span class="cl">	<span class="nv">url</span> <span class="o">=</span> https://github.com/kenhuang-io/extensible-dotfiles.git
 </span></span><span class="line"><span class="cl">	<span class="nv">fetch</span> <span class="o">=</span> +refs/heads/*:refs/remotes/origin/*</span></span></code></pre></div>
 </div>
 <p>
@@ -496,7 +496,7 @@ I don&#39;t know why <code class="verbatim">--single-branch</code> should be imp
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "whatacold" + '.disqus.com/embed.js';
+        s.src = '//' + "kenhuang_io" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();
@@ -526,7 +526,7 @@ I don&#39;t know why <code class="verbatim">--single-branch</code> should be imp
           
               <li>
 		
-		  <a href="mailto:whatacold@gmail.com" title="Email me">
+		  <a href="mailto:kenhuang512@gmail.com" title="Email me">
 		
                   <span class="fa-stack fa-lg">
                     <i class="fas fa-circle fa-stack-2x"></i>
