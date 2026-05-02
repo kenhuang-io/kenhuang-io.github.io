@@ -237,6 +237,68 @@
         <div class="posts-list">
           
             <article class="post-preview">
+    <a href="https://blog.kenhuang.io/blog/2026-04-23-desktop-app-clojure-cljfx/">
+        <h2 class="post-title">Creating Desktop Apps with Clojure and Cljfx</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2026-04-23
+  
+    &nbsp;(Last modified on 2026-05-02)
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;min
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1217&nbsp;words
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Intro
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<p>
+I&#39;ve been building <a href="https://backdrop.kenhuang.io/">Backdrop</a>, a desktop app, in Clojure for the last few months. I never thought I would build a desktop app, since I mainly did backend work. But I did, with the help of Clojure!</p>
+<p>
+If you&#39;re curious what Backdrop is, here is a quick demo video I made the other day.
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/msXZ4VdTCJw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+</p>
+        <a href="https://blog.kenhuang.io/blog/2026-04-23-desktop-app-clojure-cljfx/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://blog.kenhuang.io/tags/clojure/">Clojure</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/projects/">Projects</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://blog.kenhuang.io/blog/2026-03-10-backdrop-intro/">
         <h2 class="post-title">Your Screenshots Deserve Better. Introducing Backdrop.</h2>
         
@@ -251,13 +313,13 @@
   
   <i class="fas fa-calendar"></i>&nbsp;Posted on 2026-03-10
   
-    &nbsp;(Last modified on 2026-04-19)
+    &nbsp;(Last modified on 2026-04-24)
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;min
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;365&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;349&nbsp;words
   
   
   
@@ -814,81 +876,6 @@ cider might bind a few keys to a single command!</p>
         
        
        <a href="https://blog.kenhuang.io/tags/emacs/">emacs</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://blog.kenhuang.io/blog/2024-12-07-babashka-fs-notes/">
-        <h2 class="post-title">A Few Quick Notes About babashka/fs</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on 2024-12-07
-  
-    &nbsp;(Last modified on 2024-12-19)
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;min
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;149&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-Recently I&#39;ve used <a href="https://github.com/babashka/fs/blob/master/API.md">babashka/fs</a> a little bit, here are some quick notes for it:</p>
-<ul>
-<li>Path vs File.
-
-Use Path whenever possible, according to <a href="https://stackoverflow.com/a/26658436">this SO answer to &#34;Java: Path vs File&#34;</a>.
-
-This is actually Java related.</li>
-<li>It&#39;s ok to use a <code class="verbatim">path</code> as a key for a clojure map.
-
-At my first try, I somehow came to the conclusion that it&#39;s not ok, while I was refactoring the <a href="https://github.com/scicloj/clay/blob/main/src/scicloj/clay/v2/live_reload.clj">live reload</a> for clay. And later I found that it&#39;s totally fine to use it as a key. 😞</li>
-<li>Use <a href="https://github.com/babashka/fs/blob/master/API.md#babashka.fs/path">fs/path</a> to construct file/directory paths, for example, <code class="verbatim">(fs/path &#34;/tmp&#34; &#34;foo&#34; &#34;bar&#34; &#34;baz.clj&#34;)</code> will result in a path object for <code class="verbatim">/tmp/foo/bar/baz.clj</code> on linux.
-
-If you&#39;re coming from Python, it might remind you of <a href="https://docs.python.org/3/library/os.path.html">os.path.join(path, *paths)</a>.</li>
-<li>Use <code class="verbatim">fs/createdirs</code> for <code class="verbatim">mkdir -p</code>, though its name is a bit misleading, I first thought it&#39;s for creating a few dirs.</li>
-<li><code class="verbatim">fs/with-temp-dir</code> is convenient for <a href="https://github.com/scicloj/clay/blob/main/test/scicloj/clay/v2/live_reload_test.clj">creating tests</a>.</li>
-</ul>
-
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://blog.kenhuang.io/tags/clojure/">clojure</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/cider/">cider</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/clay/">clay</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/python/">python</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/tweet/">tweet</a>&nbsp;
          
     </div>
     

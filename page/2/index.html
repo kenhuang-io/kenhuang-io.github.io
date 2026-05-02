@@ -273,6 +273,111 @@
           
           
             <article class="post-preview">
+    <a href="https://blog.kenhuang.io/blog/2024-12-22-getting-started-with-cider/">
+        <h2 class="post-title">Getting Started with Cider for Clojure Programming</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2024-12-22
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;min
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;303&nbsp;words
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>
+Here is the outline for my cider tutorial on YouTube, covering basic things you need to know to get started with cider, and starting exploring the fun of clojure programming with the REPL-driven programming approach.</p>
+<p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/evmRpr_DEBQ?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+</p>
+<div id="outline-container-headline-1" class="outline-2">
+<h2 id="headline-1">
+Jack In to a REPL
+</h2>
+<div id="outline-text-headline-1" class="outline-text-2">
+<dl>
+<dt>
+C-c M-j (cider-jack-in-clj)
+</dt>
+<dd>start a nREPL and jack in.
+
+It works in a project or with a <strong>sole .clj file</strong>.</dd>
+<dt>
+M-x cider-connect-clj
+</dt>
+<dd>run the command and then fill in hostname and port.
+
+It could be useful in some cases. e.g. on Windows, I can start the nREPL manually and then connect to it separately.</dd>
+</dl>
+</div>
+</div>
+<div id="outline-container-headline-2" class="outline-2">
+<h2 id="headline-2">
+Evaluate Things
+</h2>
+<div id="outline-text-headline-2" class="outline-text-2">
+<dl>
+<dt>
+C-M-x (cider-eval-defun-at-point)
+</dt>
+<dd>evaluate current top-level form.</dd>
+<dt>
+C-x C-e (cider-eval-last-sexp)
+</dt>
+<dd>evaluate the preceding form.</dd>
+<dt>
+C-c C-k (cider-load-buffer)
+</dt>
+<dd>evaluate/load the current buffer.</dd>
+<dt>
+C-c C-p (cider-pprint-eval-last-sexp)
+</dt>
+<dd>Pprint the result in a dedicated buffer.
+
+Great thing to do when the result is too large to fit in the echo area.</dd>
+</dl>
+<p>Note: I prefer to use the same key bindings as for Elisp, given that
+cider might bind a few keys to a single command!</p>
+        <a href="https://blog.kenhuang.io/blog/2024-12-22-getting-started-with-cider/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://blog.kenhuang.io/tags/clojure/">clojure</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/cider/">cider</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/emacs/">emacs</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://blog.kenhuang.io/blog/2024-12-07-babashka-fs-notes/">
         <h2 class="post-title">A Few Quick Notes About babashka/fs</h2>
         
@@ -827,65 +932,6 @@ That is, make it from:</p>
         
        
        <a href="https://blog.kenhuang.io/tags/emacs/">Emacs</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://blog.kenhuang.io/blog/2023-11-19-emacs-winner-mode/">
-        <h2 class="post-title">Restoring Emacs&#39; Window Layouts</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on 2023-11-19
-  
-    &nbsp;(Last modified on 2025-02-26)
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;min
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;332&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-If you&#39;ve been using Emacs for a while, I bet you must have encountered the annoying problem that your Emacs window layout gets messed up after some operations, such as looking for a help (e.g. <code class="verbatim">C-h k</code>), or checking things in the magit status buffer.</p>
-<figure>
-<img src="/img/r-mo-w-_iZqdviAo-unsplash-window.jpg" alt="Photo by R Mo on Unsplash" title="Click to enlarge the image"/>
-<figcaption>
-Photo by R Mo on Unsplash
-</figcaption>
-</figure>
-<p>
-I&#39;m happy if I can just get back to the previous layout that I had before, and guess what? Emacs happens to have that capability built in – the <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Window-Convenience.html">winner-mode</a> package, what a surprise!</p>
-        <a href="https://blog.kenhuang.io/blog/2023-11-19-emacs-winner-mode/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://blog.kenhuang.io/tags/emacs/">Emacs</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/hydra/">hydra</a>&nbsp;
          
     </div>
     

@@ -237,6 +237,81 @@
         <div class="posts-list">
           
             <article class="post-preview">
+    <a href="https://blog.kenhuang.io/blog/2024-12-07-babashka-fs-notes/">
+        <h2 class="post-title">A Few Quick Notes About babashka/fs</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2024-12-07
+  
+    &nbsp;(Last modified on 2024-12-19)
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;min
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;149&nbsp;words
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <p>
+Recently I&#39;ve used <a href="https://github.com/babashka/fs/blob/master/API.md">babashka/fs</a> a little bit, here are some quick notes for it:</p>
+<ul>
+<li>Path vs File.
+
+Use Path whenever possible, according to <a href="https://stackoverflow.com/a/26658436">this SO answer to &#34;Java: Path vs File&#34;</a>.
+
+This is actually Java related.</li>
+<li>It&#39;s ok to use a <code class="verbatim">path</code> as a key for a clojure map.
+
+At my first try, I somehow came to the conclusion that it&#39;s not ok, while I was refactoring the <a href="https://github.com/scicloj/clay/blob/main/src/scicloj/clay/v2/live_reload.clj">live reload</a> for clay. And later I found that it&#39;s totally fine to use it as a key. 😞</li>
+<li>Use <a href="https://github.com/babashka/fs/blob/master/API.md#babashka.fs/path">fs/path</a> to construct file/directory paths, for example, <code class="verbatim">(fs/path &#34;/tmp&#34; &#34;foo&#34; &#34;bar&#34; &#34;baz.clj&#34;)</code> will result in a path object for <code class="verbatim">/tmp/foo/bar/baz.clj</code> on linux.
+
+If you&#39;re coming from Python, it might remind you of <a href="https://docs.python.org/3/library/os.path.html">os.path.join(path, *paths)</a>.</li>
+<li>Use <code class="verbatim">fs/createdirs</code> for <code class="verbatim">mkdir -p</code>, though its name is a bit misleading, I first thought it&#39;s for creating a few dirs.</li>
+<li><code class="verbatim">fs/with-temp-dir</code> is convenient for <a href="https://github.com/scicloj/clay/blob/main/test/scicloj/clay/v2/live_reload_test.clj">creating tests</a>.</li>
+</ul>
+
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://blog.kenhuang.io/tags/clojure/">clojure</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/cider/">cider</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/clay/">clay</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/python/">python</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/tweet/">tweet</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://blog.kenhuang.io/blog/2024-11-27-clojure-unit-test/">
         <h2 class="post-title">Doing Unit test in Clojure Is Easy</h2>
         
@@ -743,61 +818,6 @@ Recently I&#39;m learning Clojure, and I&#39;m trying to find similar ways in Cl
 <p>
 How to do that in Clojure? To make the problem simple, let&#39;s assume that the input string only has letters and spaces, that is, <code class="verbatim">[a-zA-Z ]</code> in regex pattern.</p>
         <a href="https://blog.kenhuang.io/blog/2021-07-25-clojure-string-title-case/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://blog.kenhuang.io/tags/clojure/">Clojure</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/python/">Python</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://blog.kenhuang.io/blog/2021-07-22-clojure-string-manipulation/">
-        <h2 class="post-title">String Manipulation in Clojure</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on 2021-07-22
-  
-    &nbsp;(Last modified on 2021-09-19)
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;5&nbsp;min
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;866&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-Python string APIs are powerful and concise, that is an important reason I use it to do a lot of scripting these days, <code class="verbatim">join</code>, <code class="verbatim">split</code>, <code class="verbatim">strip</code>, to name a few.</p>
-<p>
-Since I am learning Clojure recently, I am wondering, how is string manipulation like in Clojure and how to implement equivalent ones?</p>
-<p>
-I think it&#39;s an excellent opportunity to get familiar with Clojure. Before diving into the implementation, how to declare a multi-line string?</p>
-        <a href="https://blog.kenhuang.io/blog/2021-07-22-clojure-string-manipulation/" class="post-read-more">[Read More]</a>
         
     </div>
 

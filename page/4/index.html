@@ -273,6 +273,72 @@
           
           
             <article class="post-preview">
+    <a href="https://blog.kenhuang.io/blog/2022-04-09-scrapy-csv-without-header/">
+        <h2 class="post-title">How to append items to the CSV file without header row?</h2>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on 2022-04-09
+  
+    &nbsp;(Last modified on 2025-02-26)
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;min
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;313&nbsp;words
+  
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <figure>
+<img src="https://docs.scrapy.org/en/latest/_images/scrapy_architecture_02.jpg" alt="Scrapy Architecture" title="Click to enlarge the image"/>
+<figcaption>
+Scrapy Architecture
+</figcaption>
+</figure>
+<p>
+Scrapy provides a few <a href="https://docs.scrapy.org/en/latest/topics/exporters.html">item exporters</a> by default to export items in
+commonly used file formats like CSV/JSON/XML. I usually use CSV to
+export items, it is pretty convenient, and it comes in two ways:</p>
+<ul>
+<li>appending mode, for example, <code>scrapy crawl foo -o test.csv</code></li>
+<li>overwriting mode with <code class="verbatim">-O</code> option, like <code>scrapy crawl foo -O test.csv</code></li>
+</ul>
+<p>But in the appending mode, it&#39;s a bit annoying that it always appends
+the header row before the newly scraped items, which is not correctly
+in terms of CSV format.</p>
+        <a href="https://blog.kenhuang.io/blog/2022-04-09-scrapy-csv-without-header/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+    <div class="blog-tags">
+        
+       
+       <a href="https://blog.kenhuang.io/tags/python/">Python</a>&nbsp;
+        
+       
+       <a href="https://blog.kenhuang.io/tags/scrapy/">Scrapy</a>&nbsp;
+         
+    </div>
+    
+
+</article>
+          
+            <article class="post-preview">
     <a href="https://blog.kenhuang.io/blog/2022-01-22-emacs-eglot-lsp/">
         <h2 class="post-title">Eglot for Better Programming Experience in Emacs</h2>
         
@@ -813,72 +879,6 @@ I think it&#39;s an excellent opportunity to get familiar with Clojure. Before d
         
        
        <a href="https://blog.kenhuang.io/tags/python/">Python</a>&nbsp;
-         
-    </div>
-    
-
-</article>
-          
-            <article class="post-preview">
-    <a href="https://blog.kenhuang.io/blog/2021-07-17-emacs-i3wm-dunst/">
-        <h2 class="post-title">Send Notifications from Emacs with i3wm and Dunst</h2>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on 2021-07-17
-  
-    &nbsp;(Last modified on 2025-02-26)
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;min
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;780&nbsp;words
-  
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <p>
-I barely use notifications, but recently I think it&#39;s a valuable way to remind me things like helping me nurture habits, or to notify me of emergencies like a critically low laptop battery.</p>
-<p>
-So I try to integrate notifications to org-mode and Emacs today.</p>
-<p>
-The <code class="verbatim">org-notify</code> package from <code class="verbatim">org-contrib</code> (install it by <code class="verbatim">(package-install &#39;org-contrib)</code> ) could do this job easily before, so I first test it in the minibuffer with <code class="verbatim">(org-notify &#34;test&#34;)</code>.</p>
-<p>
-Unfortunately, it errors out:</p>
-        <a href="https://blog.kenhuang.io/blog/2021-07-17-emacs-i3wm-dunst/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-    <div class="blog-tags">
-        
-       
-       <a href="https://blog.kenhuang.io/tags/emacs/">Emacs</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/i3wm/">i3wm</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/tiling-wm/">tiling-wm</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/extensible-dotfiles/">extensible-dotfiles</a>&nbsp;
-        
-       
-       <a href="https://blog.kenhuang.io/tags/linux/">Linux</a>&nbsp;
          
     </div>
     
