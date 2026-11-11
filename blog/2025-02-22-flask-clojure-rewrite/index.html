@@ -15,6 +15,9 @@
       <title>Rewrite of a Flask Web App in Clojure - Ken Huang</title>
 
   <meta name="description" content="
+Before we start, maybe you&#39;re interested in the Sudoku game I&#39;m developing using Clojure &amp; ClojureScript, it&#39;s free. Check it out:
+👉 Play Sudoku for Free!
+
 
 Intro
 
@@ -25,7 +28,7 @@ A few years ago, I made a simple web app in Flask to deal with some text process
 Feature #1: generating compile_commands.json for GNU Makefile projects written in C/C&#43;&#43; using the output of the make command. Because, unlike CMake, the make command can&#39;t generate it.
 Feature #2: extract text using Python regex. It&#39;s handy when I feel like sed/awk/grep&#39;s line-oriented processing isn&#39;t enough for the task at hand.
 
-BTW, I&#39;m improving my English by watching YouTube videos every single day; If you&#39;re also learning English, or any languages, LanguagePuppy can definitely help you. It&#39;s a Chrome extension I developed using Clojure. Check it out:">
+Recently, I was thinking about adding some functionalities to it. But since I&#39;ve put more effort into Clojure these days, I&#39;d like to use Clojure to do it. So, I spent a few nights rewriting the web app in Clojure.">
   <meta name="author" content="Ken Huang"/><script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -97,13 +100,13 @@ BTW, I&#39;m improving my English by watching YouTube videos every single day; I
     "@id": "https://blog.kenhuang.io/#author"
   },
   "headline": "Rewrite of a Flask Web App in Clojure",
-  "description": " Intro A few years ago, I made a simple web app in Flask to deal with some text processing problems from my daily work. It has two main features:\nFeature #1: generating compile_commands.json for GNU Makefile projects written in C\/C\u002b\u002b using the output of the make command. Because, unlike CMake, the make command can\u0026#39;t generate it. Feature #2: extract text using Python regex. It\u0026#39;s handy when I feel like sed\/awk\/grep\u0026#39;s line-oriented processing isn\u0026#39;t enough for the task at hand. BTW, I\u0026#39;m improving my English by watching YouTube videos every single day; If you\u0026#39;re also learning English, or any languages, LanguagePuppy can definitely help you. It\u0026#39;s a Chrome extension I developed using Clojure. Check it out:\n",
+  "description": " Before we start, maybe you\u0026#39;re interested in the Sudoku game I\u0026#39;m developing using Clojure \u0026amp; ClojureScript, it\u0026#39;s free. Check it out:\n👉 Play Sudoku for Free! Intro A few years ago, I made a simple web app in Flask to deal with some text processing problems from my daily work. It has two main features:\nFeature #1: generating compile_commands.json for GNU Makefile projects written in C\/C\u002b\u002b using the output of the make command. Because, unlike CMake, the make command can\u0026#39;t generate it. Feature #2: extract text using Python regex. It\u0026#39;s handy when I feel like sed\/awk\/grep\u0026#39;s line-oriented processing isn\u0026#39;t enough for the task at hand. Recently, I was thinking about adding some functionalities to it. But since I\u0026#39;ve put more effort into Clojure these days, I\u0026#39;d like to use Clojure to do it. So, I spent a few nights rewriting the web app in Clojure.\n",
   "inLanguage": "en",
-  "wordCount":  3250 ,
+  "wordCount":  3238 ,
   "timeRequired": "PT16M",
   "dateCreated": "2025-02-22T22:46:05+08:00",
   "datePublished": "2025-02-22T22:46:05+08:00",
-  "dateModified": "2025-10-17T20:29:45+08:00",
+  "dateModified": "2026-11-12T00:44:21+08:00",
   "image": "https://blog.kenhuang.io/img/2021-12-10-motor-helmet-400.jpg",
   "keywords": [ "Clojure, ClojureScript, Reagent, shadow-cljs, Flask" ],
   "mainEntityOfPage": {
@@ -126,6 +129,9 @@ BTW, I&#39;m improving my English by watching YouTube videos every single day; I
 
 <meta property="og:title" content="Rewrite of a Flask Web App in Clojure" />
 <meta property="og:description" content="
+Before we start, maybe you&#39;re interested in the Sudoku game I&#39;m developing using Clojure &amp; ClojureScript, it&#39;s free. Check it out:
+👉 Play Sudoku for Free!
+
 
 Intro
 
@@ -136,7 +142,7 @@ A few years ago, I made a simple web app in Flask to deal with some text process
 Feature #1: generating compile_commands.json for GNU Makefile projects written in C/C&#43;&#43; using the output of the make command. Because, unlike CMake, the make command can&#39;t generate it.
 Feature #2: extract text using Python regex. It&#39;s handy when I feel like sed/awk/grep&#39;s line-oriented processing isn&#39;t enough for the task at hand.
 
-BTW, I&#39;m improving my English by watching YouTube videos every single day; If you&#39;re also learning English, or any languages, LanguagePuppy can definitely help you. It&#39;s a Chrome extension I developed using Clojure. Check it out:" />
+Recently, I was thinking about adding some functionalities to it. But since I&#39;ve put more effort into Clojure these days, I&#39;d like to use Clojure to do it. So, I spent a few nights rewriting the web app in Clojure." />
 <meta property="og:image" content="https://blog.kenhuang.io/img/oskar-yildiz-cOkpTiJMGzA-unsplash-programming.jpg" />
 <meta property="og:url" content="https://blog.kenhuang.io/blog/2025-02-22-flask-clojure-rewrite/" />
 <meta property="og:type" content="website" />
@@ -144,14 +150,15 @@ BTW, I&#39;m improving my English by watching YouTube videos every single day; I
 
   <meta name="twitter:title" content="Rewrite of a Flask Web App in Clojure" />
   <meta name="twitter:description" content="
+Before we start, maybe you&#39;re interested in the Sudoku game I&#39;m developing using Clojure &amp; ClojureScript, it&#39;s free. Check it out:
+👉 Play Sudoku for Free!
+
 
 Intro
 
 
 
-A few years ago, I made a simple web app in Flask to deal with some text processing problems from my daily work. It has two main features:
-
-Feature #1: generating compile_commands.json for …">
+A few years ago, …">
   <meta name="twitter:image" content="https://blog.kenhuang.io/img/oskar-yildiz-cOkpTiJMGzA-unsplash-programming.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@kenhuang_io" />
@@ -347,12 +354,15 @@ Feature #1: generating compile_commands.json for …">
           
           <p class="page-meta">
             
-            Published: 2025-02-22, Last Updated: 2025-10-17
+            Published: 2025-02-22, Last Updated: 2026-11-12
             
           </p>
         
 
         
+<p>
+<em>Before we start, maybe you&#39;re interested in the Sudoku game I&#39;m developing using Clojure &amp; ClojureScript, it&#39;s free. Check it out:</em></p>
+<a href="https://sudoku.kenhuang.io/?utm_medium=kensblog&utm_source=flaskclojure" target="_blank" class="button-link">👉 Play Sudoku for Free!</a>
 <div id="outline-container-headline-1" class="outline-2">
 <h2 id="headline-1">
 Intro
@@ -364,10 +374,7 @@ A few years ago, I made a simple web app in <a href="https://flask.palletsprojec
 <li>Feature #1: generating <code class="verbatim">compile_commands.json</code> for GNU Makefile projects written in C/C++ using the output of the <code class="verbatim">make</code> command. Because, unlike CMake, the make command can&#39;t generate it.</li>
 <li>Feature #2: extract text using Python regex. It&#39;s handy when I feel like sed/awk/grep&#39;s line-oriented processing isn&#39;t enough for the task at hand.</li>
 </ul>
-<p><em>BTW, I&#39;m improving my English by watching YouTube videos every single day; If you&#39;re also learning English, or any languages, LanguagePuppy can definitely help you. It&#39;s a Chrome extension I developed using Clojure. Check it out:</em></p>
-<a href="https://chromewebstore.google.com/detail/cmbdcklgjemppkcmnoiaehnefhobgiin?utm_medium=web&utm_source=blog&utm_campaign=flask.clojure" target="_blank" class="button-link">Install LanguagePuppy</a>
-<p>
-Recently, I was thinking about adding some functionalities to it. But since I&#39;ve put more effort into <a href="https://clojure.org/">Clojure</a> these days, I&#39;d like to use Clojure to do it. So, I spent a few nights rewriting the web app in Clojure.</p>
+<p>Recently, I was thinking about adding some functionalities to it. But since I&#39;ve put more effort into <a href="https://clojure.org/">Clojure</a> these days, I&#39;d like to use Clojure to do it. So, I spent a few nights rewriting the web app in Clojure.</p>
 <p>
 In this post, I am going to share the journey and some thoughts on it.</p>
 <figure>
