@@ -24,8 +24,8 @@ I&#39;ve been building Backdrop, a desktop app, in Clojure for the last few mont
 
 If you&#39;re curious what Backdrop is, here is a quick demo video I made the other day.
 
-      
-    
+			
+		
 ">
   <meta name="author" content="Ken Huang"/><script type="application/ld+json">
 {
@@ -136,8 +136,8 @@ I&#39;ve been building Backdrop, a desktop app, in Clojure for the last few mont
 
 If you&#39;re curious what Backdrop is, here is a quick demo video I made the other day.
 
-      
-    
+			
+		
 " />
 <meta property="og:image" content="https://blog.kenhuang.io/img/backdrop-intro.jpg" />
 <meta property="og:url" content="https://blog.kenhuang.io/blog/2026-04-23-desktop-app-clojure-cljfx/" />
@@ -157,7 +157,7 @@ I&#39;ve been building Backdrop, a desktop app, in Clojure for the last few mont
   <meta name="twitter:site" content="@kenhuang_io" />
   <meta name="twitter:creator" content="@kenhuang_io" />
   <link href='https://blog.kenhuang.io/img/2021-12-10-motor-helmet-144.png' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.162.1">
   <link rel="alternate" href="https://blog.kenhuang.io/rss.xml" type="application/rss+xml" title="Ken Huang"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.0.1/css/brands.css" integrity="sha384-+eXGm6TmVoCZR1gX03US+L++L2mJIfOvp2X0+luTuEktXaF5F+e3zn0sO0HBvOyT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.0.1/css/fontawesome.css" integrity="sha384-B5nyPZa7e84uCJEYHtevCdVYtQosWsbDSRtq3cy/jeSVtQW05GL8CKXO7waXsjPK" crossorigin="anonymous">
@@ -176,7 +176,7 @@ I&#39;ve been building Backdrop, a desktop app, in Clojure for the last few mont
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TGCG9ZG24"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -363,8 +363,8 @@ I&#39;ve been building <a href="https://backdrop.kenhuang.io/">Backdrop</a>, a d
 <p>
 If you&#39;re curious what Backdrop is, here is a quick demo video I made the other day.
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/msXZ4VdTCJw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
-    </div>
+			<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/msXZ4VdTCJw?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+		</div>
 </p>
 <div id="outline-container-headline-2" class="outline-3">
 <h3 id="headline-2">
@@ -546,17 +546,17 @@ Thankfully, Java has a tool named <a href="https://docs.oracle.com/en/java/javas
 Here was the recipe for Linux RPM:</p>
 <div class="src src-shell">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">jpackage --input target/obfuscated <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --name backdrop <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --verbose <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --description <span class="s2">&#34;Backdrop: beautifying screenshots in seconds&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --app-version <span class="s2">&#34;0.3&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --icon ./resources/misc/icon.png <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --main-jar <span class="k">$(</span>JAR<span class="k">)</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --main-class backdrop.core <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --type rpm <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --linux-shortcut <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --linux-menu-group <span class="s2">&#34;Graphics;Office;Utility;&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>	 --resource-dir ./build/ <span class="err">\</span></span></span></code></pre></div>
+</span></span></span><span class="line"><span class="cl">	 --name backdrop <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --verbose <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --description <span class="s2">&#34;Backdrop: beautifying screenshots in seconds&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --app-version <span class="s2">&#34;0.3&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --icon ./resources/misc/icon.png <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --main-jar <span class="k">$(</span>JAR<span class="k">)</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --main-class backdrop.core <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --type rpm <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --linux-shortcut <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --linux-menu-group <span class="s2">&#34;Graphics;Office;Utility;&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">	 --resource-dir ./build/ <span class="err">\</span></span></span></code></pre></div>
 </div>
 <p>
 But it was trickier for Windows, as jpackage needed to use another external tool called <a href="https://github.com/wixtoolset/wix/releases/">Wix</a> to build the installer.
@@ -736,8 +736,9 @@ I don&#39;t want to have this type of slowness in the future. And recently, I di
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
     </div>
   
 
@@ -842,7 +843,7 @@ I don&#39;t want to have this type of slowness in the future. And recently, I di
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.162.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>

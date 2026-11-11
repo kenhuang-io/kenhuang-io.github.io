@@ -1,63 +1,64 @@
+
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.kenhuang.io/blog/</loc>
-    <lastmod>2026-05-02T17:37:23+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/blog/"
-                />
+    <lastmod>2026-11-12T00:39:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.kenhuang.io/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/blog/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/clojure/</loc>
     <lastmod>2026-05-02T17:37:23+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/clojure/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/clojure/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/clojure/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/clojure/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2026-04-23-desktop-app-clojure-cljfx/</loc>
     <lastmod>2026-05-02T17:37:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.kenhuang.io/</loc>
-    <lastmod>2026-05-02T17:37:23+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/"
-                />
+    <lastmod>2026-11-12T00:39:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.kenhuang.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/projects/</loc>
     <lastmod>2026-05-02T17:37:23+08:00</lastmod>
   </url><url>
     <loc>https://blog.kenhuang.io/tags/</loc>
-    <lastmod>2026-05-02T17:37:23+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/"
-                />
+    <lastmod>2026-11-12T00:39:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.kenhuang.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2026-03-10-backdrop-intro/</loc>
@@ -76,13 +77,13 @@
     <lastmod>2026-04-19T18:48:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/emacs/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/emacs/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/emacs/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/emacs/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2025-04-29-clojure-tip-cider-clojuredocs/</loc>
@@ -98,13 +99,13 @@
     <lastmod>2026-04-19T12:39:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/clojurescript/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/clojurescript/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/clojurescript/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/clojurescript/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2025-04-11-google-analytics-clojurescript/</loc>
@@ -123,13 +124,13 @@
     <lastmod>2025-10-17T20:29:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/reagent/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/reagent/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/reagent/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/reagent/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2025-02-22-flask-clojure-rewrite/</loc>
@@ -151,13 +152,13 @@
     <lastmod>2026-04-19T18:48:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/python/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/python/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/python/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/python/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2024-11-27-clojure-unit-test/</loc>
@@ -206,13 +207,13 @@
     <lastmod>2025-02-26T00:11:19+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/org-mode/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/org-mode/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/org-mode/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/org-mode/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2023-06-12-emacs-join-lines/</loc>
@@ -222,13 +223,13 @@
     <lastmod>2026-04-19T12:39:42+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/hugo/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/hugo/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/hugo/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2022-10-10-emacs-hugo-blogging/</loc>
@@ -241,26 +242,26 @@
     <lastmod>2025-10-17T20:28:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/blog/2022-09-10-emacs-beancount-account-files/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/blog/2022-09-10-emacs-beancount-account-files/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/blog/2022-09-10-emacs-beancount-account-files/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/blog/2022-09-10-emacs-beancount-account-files/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/beancount/</loc>
     <lastmod>2025-10-17T20:28:15+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/beancount/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/beancount/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/beancount/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/beancount/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2022-08-08-org-link-bookmarklet/</loc>
@@ -273,26 +274,26 @@
     <lastmod>2026-04-19T12:43:48+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/debugging/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/debugging/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/debugging/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/debugging/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2022-07-17-emacs-elisp-debug/</loc>
     <lastmod>2025-10-17T20:28:45+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/blog/2022-07-17-emacs-elisp-debug/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/blog/2022-07-17-emacs-elisp-debug/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/blog/2022-07-17-emacs-elisp-debug/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/blog/2022-07-17-emacs-elisp-debug/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2022-05-23-emacs-duplicate-line/</loc>
@@ -302,16 +303,16 @@
     <lastmod>2025-02-26T00:11:19+08:00</lastmod>
   </url><url>
     <loc>https://blog.kenhuang.io/tags/linux/</loc>
-    <lastmod>2025-10-17T20:29:14+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/linux/"
-                />
+    <lastmod>2026-11-12T00:39:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.kenhuang.io/tags/linux/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/linux/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/tiling-wm/</loc>
@@ -330,13 +331,13 @@
     <lastmod>2026-04-22T08:06:12+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/about/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/about/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/about/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/eglot/</loc>
@@ -349,19 +350,19 @@
     <lastmod>2026-04-19T18:48:56+08:00</lastmod>
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2022-01-14-i3wm-i3status-reload-config/</loc>
-    <lastmod>2025-10-17T20:29:14+08:00</lastmod>
+    <lastmod>2026-11-12T00:39:34+08:00</lastmod>
   </url><url>
     <loc>https://blog.kenhuang.io/tags/i3wm/</loc>
-    <lastmod>2025-10-17T20:29:14+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/i3wm/"
-                />
+    <lastmod>2026-11-12T00:39:34+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
                 href="https://blog.kenhuang.io/tags/i3wm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/i3wm/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/english/</loc>
@@ -407,26 +408,26 @@
     <lastmod>2026-04-19T18:48:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/blog/2021-07-12-python-re-chazhao/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/blog/2020-10-21-a-python-re.findall-service/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/blog/2020-10-21-a-python-re.findall-service/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/blog/2021-07-12-python-re-chazhao/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/texttoolkit/</loc>
     <lastmod>2026-04-19T18:48:56+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/texttoolkit/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/texttoolkit/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/texttoolkit/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/texttoolkit/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/tags/tools/</loc>
@@ -457,13 +458,13 @@
     <lastmod>2025-10-17T20:27:26+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/tags/git/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/tags/git/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/tags/git/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/tags/git/"
                 />
   </url><url>
     <loc>https://blog.kenhuang.io/blog/2020-02-04-binary-search-algorithm-vs-problem-solving/</loc>
@@ -514,13 +515,13 @@
     <loc>https://blog.kenhuang.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-cn"
-                href="https://blog.kenhuang.io/zh-cn/categories/"
+                hreflang="en"
+                href="https://blog.kenhuang.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="https://blog.kenhuang.io/categories/"
+                hreflang="zh-cn"
+                href="https://blog.kenhuang.io/zh-cn/categories/"
                 />
   </url>
 </urlset>

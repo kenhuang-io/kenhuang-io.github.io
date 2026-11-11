@@ -126,7 +126,7 @@
   <meta name="twitter:site" content="@kenhuang_io" />
   <meta name="twitter:creator" content="@kenhuang_io" />
   <link href='https://blog.kenhuang.io/img/2021-12-10-motor-helmet-144.png' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.152.2">
+  <meta name="generator" content="Hugo 0.162.1">
   <link rel="alternate" href="https://blog.kenhuang.io/rss.xml" type="application/rss+xml" title="Ken Huang"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css" integrity="sha384-5TcZemv2l/9On385z///+d7MSYlvIEw9FuZTIdZ14vJLqWphw7e7ZPuOiCHJcFCP" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.0.1/css/brands.css" integrity="sha384-+eXGm6TmVoCZR1gX03US+L++L2mJIfOvp2X0+luTuEktXaF5F+e3zn0sO0HBvOyT" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.0.1/css/fontawesome.css" integrity="sha384-B5nyPZa7e84uCJEYHtevCdVYtQosWsbDSRtq3cy/jeSVtQW05GL8CKXO7waXsjPK" crossorigin="anonymous">
@@ -145,7 +145,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TGCG9ZG24"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -333,63 +333,63 @@ I take the following steps to generate call graphs for a project on terminals on
 Here is the complete diff:</p>
 <div class="src src-diff">
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-diff" data-lang="diff"><span class="line"><span class="cl"><span class="gd">--- doxygen.conf.orig
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+++ doxygen.conf
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span><span class="gu">@@ -8,7 +8,7 @@
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span> PROJECT_NUMBER         =
+</span></span></span><span class="line"><span class="cl"><span class="gi">+++ doxygen.conf
+</span></span></span><span class="line"><span class="cl"><span class="gu">@@ -8,7 +8,7 @@
+</span></span></span><span class="line"><span class="cl"> PROJECT_NUMBER         =
 </span></span><span class="line"><span class="cl"> PROJECT_BRIEF          =
 </span></span><span class="line"><span class="cl"> PROJECT_LOGO           =
 </span></span><span class="line"><span class="cl"><span class="gd">-OUTPUT_DIRECTORY       =
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+OUTPUT_DIRECTORY       = /path/to/doxygen-output/
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> CREATE_SUBDIRS         = NO
+</span></span></span><span class="line"><span class="cl"><span class="gi">+OUTPUT_DIRECTORY       = /path/to/doxygen-output/
+</span></span></span><span class="line"><span class="cl"> CREATE_SUBDIRS         = NO
 </span></span><span class="line"><span class="cl"> ALLOW_UNICODE_NAMES    = NO
 </span></span><span class="line"><span class="cl"> OUTPUT_LANGUAGE        = English
 </span></span><span class="line"><span class="cl"><span class="gu">@@ -114,7 +114,7 @@
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span> #---------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"> #---------------------------------------------------------------------------
 </span></span><span class="line"><span class="cl"> # Configuration options related to the input files
 </span></span><span class="line"><span class="cl"> #---------------------------------------------------------------------------
 </span></span><span class="line"><span class="cl"><span class="gd">-INPUT                  =
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+INPUT                  = /path/to/a/project/ # the directory of the source code
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> INPUT_ENCODING         = UTF-8
+</span></span></span><span class="line"><span class="cl"><span class="gi">+INPUT                  = /path/to/a/project/ # the directory of the source code
+</span></span></span><span class="line"><span class="cl"> INPUT_ENCODING         = UTF-8
 </span></span><span class="line"><span class="cl"> FILE_PATTERNS          = *.c \
 </span></span><span class="line"><span class="cl">                          ,*.cc \
 </span></span><span class="line"><span class="cl"><span class="gu">@@ -161,7 +161,7 @@
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span>                          ,*.ucf \
+</span></span></span><span class="line"><span class="cl">                          ,*.ucf \
 </span></span><span class="line"><span class="cl">                          ,*.qsf \
 </span></span><span class="line"><span class="cl">                          ,*.ice
 </span></span><span class="line"><span class="cl"><span class="gd">-RECURSIVE              = NO
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+RECURSIVE              = YES
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> EXCLUDE                =
+</span></span></span><span class="line"><span class="cl"><span class="gi">+RECURSIVE              = YES
+</span></span></span><span class="line"><span class="cl"> EXCLUDE                =
 </span></span><span class="line"><span class="cl"> EXCLUDE_SYMLINKS       = NO
 </span></span><span class="line"><span class="cl"> EXCLUDE_PATTERNS       =
 </span></span><span class="line"><span class="cl"><span class="gu">@@ -255,7 +255,7 @@
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span> #---------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"> #---------------------------------------------------------------------------
 </span></span><span class="line"><span class="cl"> # Configuration options related to the LaTeX output
 </span></span><span class="line"><span class="cl"> #---------------------------------------------------------------------------
 </span></span><span class="line"><span class="cl"><span class="gd">-GENERATE_LATEX         = YES
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+GENERATE_LATEX         = NO
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> LATEX_OUTPUT           = latex
+</span></span></span><span class="line"><span class="cl"><span class="gi">+GENERATE_LATEX         = NO
+</span></span></span><span class="line"><span class="cl"> LATEX_OUTPUT           = latex
 </span></span><span class="line"><span class="cl"> LATEX_CMD_NAME         =
 </span></span><span class="line"><span class="cl"> MAKEINDEX_CMD_NAME     = makeindex
 </span></span><span class="line"><span class="cl"><span class="gu">@@ -345,10 +345,10 @@
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span> MSCGEN_PATH            =
+</span></span></span><span class="line"><span class="cl"> MSCGEN_PATH            =
 </span></span><span class="line"><span class="cl"> DIA_PATH               =
 </span></span><span class="line"><span class="cl"> HIDE_UNDOC_RELATIONS   = YES
 </span></span><span class="line"><span class="cl"><span class="gd">-HAVE_DOT               = NO
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+HAVE_DOT               = YES
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> DOT_NUM_THREADS        = 0
+</span></span></span><span class="line"><span class="cl"><span class="gi">+HAVE_DOT               = YES
+</span></span></span><span class="line"><span class="cl"> DOT_NUM_THREADS        = 0
 </span></span><span class="line"><span class="cl"> DOT_FONTNAME           = Helvetica
 </span></span><span class="line"><span class="cl"><span class="gd">-DOT_FONTSIZE           = 10
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+DOT_FONTSIZE           = 14
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> DOT_FONTPATH           =
+</span></span></span><span class="line"><span class="cl"><span class="gi">+DOT_FONTSIZE           = 14
+</span></span></span><span class="line"><span class="cl"> DOT_FONTPATH           =
 </span></span><span class="line"><span class="cl"> CLASS_GRAPH            = YES
 </span></span><span class="line"><span class="cl"> COLLABORATION_GRAPH    = YES
 </span></span><span class="line"><span class="cl"><span class="gu">@@ -358,7 +358,7 @@
-</span></span></span><span class="line"><span class="cl"><span class="gu"></span> TEMPLATE_RELATIONS     = NO
+</span></span></span><span class="line"><span class="cl"> TEMPLATE_RELATIONS     = NO
 </span></span><span class="line"><span class="cl"> INCLUDE_GRAPH          = YES
 </span></span><span class="line"><span class="cl"> INCLUDED_BY_GRAPH      = YES
 </span></span><span class="line"><span class="cl"><span class="gd">-CALL_GRAPH             = NO
-</span></span></span><span class="line"><span class="cl"><span class="gd"></span><span class="gi">+CALL_GRAPH             = YES
-</span></span></span><span class="line"><span class="cl"><span class="gi"></span> CALLER_GRAPH           = NO
+</span></span></span><span class="line"><span class="cl"><span class="gi">+CALL_GRAPH             = YES
+</span></span></span><span class="line"><span class="cl"> CALLER_GRAPH           = NO
 </span></span><span class="line"><span class="cl"> GRAPHICAL_HIERARCHY    = YES
 </span></span><span class="line"><span class="cl"> DIRECTORY_GRAPH        = YES
 </span></span></code></pre></div>
@@ -572,8 +572,9 @@ This time, just type <code class="verbatim">M-x w/run-doxygen</code> to generate
         (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
     </div>
   
 
@@ -678,7 +679,7 @@ This time, just type <code class="verbatim">M-x w/run-doxygen</code> to generate
         </p>
         
         <p class="credits theme-by text-muted">
-          <a href="https://gohugo.io">Hugo v0.152.2</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          <a href="https://gohugo.io">Hugo v0.162.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
           
         </p>
       </div>
